@@ -27,7 +27,7 @@ module SessionHelper
       end
     end
   end      
-# Returns the current_user 
+# Returns the user 
   def current_user
     if(user_id = session[:user_id])
       @current_user ||= User.find_by(id: [user_id])
